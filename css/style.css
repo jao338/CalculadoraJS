@@ -21,15 +21,29 @@ main{
 }
 
 .btn{
-    width: 70px;
-    height: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 textarea{
     margin-bottom: 16px;
-    width: 310px;
+    width: 300px;
     height: 180px;
     resize: none;
+}
+
+.btn-O{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.btn-equal{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 
