@@ -25,11 +25,12 @@ main{
     padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
+    font-size: 12pt;
 }
 
 textarea{
     margin-bottom: 16px;
-    width: 300px;
+    width: 310px;
     height: 180px;
     resize: none;
 }
@@ -45,5 +46,6 @@ textarea{
     grid-column-start: 4;
     grid-column-end: 5;
 }
+
 
 
