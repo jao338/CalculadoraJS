@@ -1,9 +1,9 @@
 let calc = document.getElementById('calc');
 let equal = document.getElementById('btn-equal')
 let area = document.getElementById('area')
-let x1;
-let x2;
-let op;
+let x1 = 0;
+let x2 = 0;
+let op = 0;
 
 let res;
 
@@ -12,7 +12,7 @@ equal.addEventListener('click', operacao);
 
 function load(){
 
-    if(valueof.x1 == undefined && valueof.x2 == undefined && valueof.op == undefined){
+    if(x1.value == 0 && x2.value == 0 && op.value == 0){
 
         switch (calc) {
             case 0:
@@ -61,7 +61,7 @@ function load(){
                 x1 = 9;
                 break;
         }
-    } else if (valueof.x1 != undefined && valueof.op != undefined) {
+    } else if (x1.value != 0 && op.value != 0) {
 
         switch (calc) {
             case 0:
@@ -111,7 +111,7 @@ function load(){
                 break;
         }    
 
-    } else if (valueof.x1 != undefined) {
+    } else if (x1.value != 0) {
 
         switch (calc) {
             case '+':
@@ -137,24 +137,33 @@ function load(){
 }
 
 function operacao (){
-    if(valueof.op == '+'){
+    if(op.value == '+'){
 
         res = x1 + x2;
 
-    }else if(valueof.op == '-'){
+    }else if(op.value == '-'){
 
         res = x1 - x2;
 
-    }else if(valueof.op == 'X'){
+    }else if(op.value == 'X'){
 
         res = x1 * x2;
 
-    }else if(valueof.op == '/'){
+    }else if(op.value == '/'){
 
         res = x1 / x2;
 
     }
 
     area.innerHTML = res;
+}
+
+
+
+function limpar(){
+
+    x1 = 0;
+    x2 = 0;
+    op = 0;
 }
 

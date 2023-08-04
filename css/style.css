@@ -47,5 +47,13 @@ textarea{
     grid-column-end: 5;
 }
 
+.btn-limpar{
+    margin-top: 32px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 
 
